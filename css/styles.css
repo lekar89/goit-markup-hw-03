@@ -1,0 +1,287 @@
+:root {
+  --container-width: 1158px;
+  --primary-color: #4d5ae5;
+  --primary-text-color: #2e2f42;
+  --secondary-text-color: #ffffff;
+  --card-text-color: #434455;
+  --background-color: #ffffff;
+  --button-none-active-color: #e7e9fc;
+  --button-hover-color: #404bbf;
+  --primary-sections-background-color: #2e2f42;
+  --secondary-sections-background-color: #f4f4fd;
+  --card-background-color: #2e2f4214;
+  --card-border-color: #f4f4fd;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: var(--primary-text-color);
+  background-color: var(--background-color);
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+button {
+  border: none;
+  padding: 12px 24px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-text-color);
+}
+
+.container {
+  max-width: var(--container-width);
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: inline-block;
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 21px;
+  color: var(--primary-color);
+}
+
+.logo-part {
+  color: var(--primary-text-color);
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.navigation .logo {
+  margin-right: 76px;
+}
+
+.navigation-items {
+  display: flex;
+  gap: 40px;
+}
+
+.navigation-items .link {
+  display: block;
+  padding: 24px 0;
+}
+
+.contacts {
+  font-style: normal;
+}
+
+.contacts-items {
+  display: flex;
+  gap: 40px;
+}
+
+.contacts-items .link {
+  display: block;
+  padding: 24px 0;
+}
+
+.general-title {
+  font-size: 56px;
+  line-height: 60px;
+  text-align: center;
+  max-width: 496px;
+  margin: 0 auto 72px;
+}
+
+.section-title {
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 72px;
+}
+
+.card-title {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.card-text {
+  color: var(--card-text-color);
+}
+
+.link:hover {
+  color: var(--button-hover-color);
+}
+
+.image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.order-section {
+  text-align: center;
+  padding: 188px 0;
+  color: var(--secondary-text-color);
+  background-color: var(--primary-sections-background-color);
+}
+
+.order-button {
+  background-color: var(--primary-color);
+  color: var(--secondary-text-color);
+}
+
+.order-button:hover {
+  background-color: var(--button-hover-color);
+}
+
+.feature-section {
+  padding: 120px 0;
+}
+
+.feature-section-items {
+  display: flex;
+  gap: 24px;
+}
+
+.feature-section-item {
+  width: calc((100% - 72px) / 4);
+}
+
+.skills-section {
+  padding: 0 0 120px;
+}
+
+.skills-section-items {
+  display: flex;
+  gap: 24px;
+}
+
+.skills-section-item {
+  width: calc((100% - 48px) / 3);
+}
+
+.team-section {
+  padding: 120px 0;
+  background-color: var(--secondary-sections-background-color);
+}
+
+.team-section-items {
+  display: flex;
+  gap: 24px;
+}
+
+.team-card {
+  width: calc((100% - 72px) / 4);
+  background-color: var(--background-color);
+  border-radius: 0 0 4px 4px;
+  box-shadow:
+    0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16),
+    0 1px 6px 0 rgba(46, 47, 66, 0.08);
+}
+
+.team-card-text {
+  padding: 32px 0;
+  text-align: center;
+}
+
+.filter-button {
+  color: var(--primary-color);
+  background-color: var(--button-none-active-color);
+}
+
+.filter-button:hover {
+  background-color: var(--button-hover-color);
+  color: var(--secondary-text-color);
+}
+
+.portfolio-section {
+  padding: 120px 0;
+}
+
+.portfolio-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.portfolio-card {
+  width: calc((100% - 48px) / 3);
+}
+
+.portfolio-card:hover {
+  box-shadow:
+    0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16),
+    0 1px 6px 0 rgba(46, 47, 66, 0.08);
+}
+
+.portfolio-card-text {
+  padding: 32px 16px;
+  border: 1px solid var(--card-border-color);
+}
+
+.filter-items {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin-bottom: 72px;
+}
+
+.footer {
+  padding: 100px 0;
+  background-color: var(--primary-sections-background-color);
+  color: var(--background-color);
+}
+
+.footer .logo {
+  margin-bottom: 16px;
+}
+
+.footer .logo-part {
+  color: var(--secondary-text-color);
+}
+
+.footer-text {
+  max-width: 264px;
+}
